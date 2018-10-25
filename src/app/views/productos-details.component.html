@@ -1,0 +1,11 @@
+<div *ngIf="!producto">
+    <p>Cargando</p>
+</div>
+
+<div *ngIf="producto">
+    <div class="col-lg-8">
+        <h3 class="mt-5">{{producto.nombre}}</h3>
+        <p class="mt-2">{{producto.description}}<p>
+        <p class="mt-2">{{producto.precio}}</p>
+    </div>
+</div>

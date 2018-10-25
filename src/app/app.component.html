@@ -1,0 +1,31 @@
+
+<div class="contenido col-lg-10 col-lg-offset-1">
+
+    <!-- Header -->
+  <header class="header col-lg-12" [style.background]="header_color">
+    <h1>
+      Bienvenido A Mi {{ title }}!
+    </h1>
+  </header>
+
+    <!-- Menu -->
+    <nav class="menu col-lg-12">
+      <ul>
+        <li><a [routerLink]="['/home']" [routerLinkActive]="['activado']">Home</a></li>
+        <li><a [routerLink]="['/productos-list']" [routerLinkActive]="['activado']">List Products</a></li>
+        <li><a [routerLink]="['/productos-add']" [routerLinkActive]="['activado']">Create Products</a></li>
+      </ul>
+    </nav>
+
+      <!-- Section Y Componente Principal -->
+    <section clas="main col-lg-12">
+<router-outlet></router-outlet>
+
+    </section>
+
+    <footer class="footer col-lg-12">
+      <p>Hola Soy Isaac</p>
+    </footer>
+
+  
+</div>
